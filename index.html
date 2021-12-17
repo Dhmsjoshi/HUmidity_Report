@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humidity</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <p class="center-me">What is the Humidity in your Area  ??</p>
+        </div>
+
+        <div class="main">
+            <div class="custom-select">
+                <select id="list" onchange="areaDetail(event);">
+                    <option value="0">Select Area:</option>
+                        
+                </select>
+            </div>
+           
+        </div>
+    </div>
+                 <div class="layout">
+                    <div class="colmn-1">
+                        <h2>About Measurements!</h2>
+                         <p>Humidity above 50% is typically considered too high, while humidity below 30% is usually too low. 
+                            That means that the ideal range of relative humidity for a home is between 30% and 50%, 
+                            according to the EPA. This, of course, depends on the climate you live in, 
+                             as well as your personal preference.</p>
+                    </div>
+                          
+                     <div class="colmn-2">
+                        
+                            <div  class="info-1"> Hello </div>
+                            <div class="info-2" onchange="function humidityInfo(e)">
+                                <!-- Humidity above 50% is typically considered too high, while humidity below 30% is usually too low. 
+                                That means that the ideal range of relative humidity for a home is between 30% and 50%, 
+                                according to the EPA. This, of course, depends on the climate you live in, 
+                                 as well as your personal preference. -->
+                                </div>
+                        
+                    
+                    </div>
+             
+                    <div class="colmn-3">
+                    
+                        <div class="circle1">Low</div>
+                        <div class="zone">Humidity < 30%</div>
+                        <div class="circle2">Normal</div>
+                        <div class="zone">Humidity between 30 - 50 %</div>
+                        <div class="circle3">High</div> 
+                        <div class="zone">Humidity > 50%</div>  
+                        
+                       
+                        
+                            
+                    </div>
+                
+                                        
+                
+            </div>
+                             
+     <script>function test(){
+        alert('hello');
+      }</script> 
+    <script src="script.js"></script>
+</body>
+</html>

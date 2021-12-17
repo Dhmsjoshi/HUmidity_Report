@@ -1,0 +1,246 @@
+body{
+    background-color: rgba(61, 59, 59, 0.9);
+    background-repeat: no-repeat;
+    background-position:stretch
+}
+
+
+.nav{
+
+    max-width: 1400px;
+    height: 60px;
+    background-color : rgba(16, 20, 20, 0.349);
+    box-shadow: 2px 2px 2px rgba(020, 020, 020, 0.9);
+    margin: 0 auto 20px auto;
+    display: grid;
+     
+}
+
+.center-me{
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size:1.5em;
+    letter-spacing: 0.15em;
+    word-spacing: 0.2em;
+    text-shadow: -2px 2px 2px rgba(020, 020, 020, 0.9);
+}
+
+.main{
+    /* max-width: 250px;
+    
+    background-color : rgba(16, 20, 20, 0.349); */
+    display: grid;
+    margin: 20px auto;
+
+}
+
+.custom-select{
+  border: 2px solid rgba(16, 20, 20, 0.349); ;
+    max-width: 250px;
+    margin: 25px auto;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 2px 2px 2px rgba(020, 020, 020, 0.9);
+   
+    
+}
+
+
+
+  .select-selected {
+    background-color: rgb(39, 40, 41);
+  }
+
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background-color: rgb(143, 146, 149);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+.nav{
+  margin: 0 auto;
+}
+  .main{
+    margin: 30px auto;
+  }
+
+@media screen and (min-width: 850px){
+
+  .layout{
+    position: relative;
+     max-width: 1400px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px , 1fr));
+   
+      gap: 30px;
+      background-color : rgba(16, 20, 20, 0.349);
+      box-shadow: 2px 2px 2px rgba(020, 020, 020, 0.9);
+      height: 500px;
+      margin: auto;
+
+  }
+}
+
+  .colmn-1{
+    position: relative;
+      display: grid;
+      align-self: center;
+      line-height: 200%;
+      font-weight: 200;
+      font-family: 'Roboto', sans-serif;
+      padding: 0 20px;
+      color: white;
+      margin: auto;
+  }
+
+  h2{
+    background-color: rgba(15, 15, 15, 0.2);
+    border-bottom: 2px solid black;
+    font-weight: 200;
+    margin:  0px 5px;
+    margin-bottom: 10px;
+   
+  }
+
+
+  .colmn-2{
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+       font-family: 'Roboto', sans-serif;
+       color: white;
+   
+  }
+
+  .info-1{
+    margin: auto;  
+    align-content: center;
+    color: rgb(236, 231, 231);
+    text-shadow: 2px 2px 2px rgba(20, 19, 19, 0.9);
+    font-size: 3ch;
+  }
+  
+  .info-2{
+    margin: auto 20px;  
+    align-content: center;
+  }
+ 
+
+.colmn-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+      align-content: center;
+	justify-content: center;
+	align-items: center;
+	font-size: 100%;
+	padding: 0 auto;
+	text-align: center;
+	row-gap: 5px;
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    
+}
+
+
+
+
+  .circle1{
+	border: 2px solid rgb(7, 7, 7);
+	background-color: rgb(35, 32, 190);
+  box-shadow: 2px 2px 2px rgba(020, 020, 020, 0.9);
+	color: white;
+    width: 70px;
+	height: 70px;
+	border-radius: 50px;
+	line-height: 50px;
+    justify-content: center;
+    display: grid;
+    align-content: center;
+    margin: 10px auto;
+  
+}
+
+.circle2{
+	border: 2px solid rgb(7, 7, 7);
+	background-color: rgb(32, 190, 137);
+  box-shadow: 2px 2px 2px rgba(020, 020, 020, 0.9);
+	color: white;
+    width: 70px;
+	height: 70px;
+	border-radius: 50px;
+	line-height: 50px;
+    justify-content: center;
+    display: grid;
+    align-content: center;
+    margin: 10px auto;
+  
+}
+
+.circle3{
+	border: 2px solid rgb(23, 22, 24);
+	background-color: rgb(226, 43, 43);
+  box-shadow: 2px 2px 2px rgba(020, 020, 020, 0.9);
+	color: white;
+    
+	width: 70px;
+	height: 70px;
+	border-radius: 50px;
+	line-height: 50px;
+    justify-content: center;
+    display: grid;
+    align-content: center;
+    margin: 10px auto;
+
+	
+}
+
+.zone{
+  width: 70px;
+	height: 70px;
+  justify-content: center;
+    display: grid;
+    align-content: center;
+    margin: 10px 2px;
+    color: white;
+}
+
